@@ -2,6 +2,14 @@
 
 </script>
 
-<p>
-    This is the work experience section
-</p>
+<div class="block">
+    <p>
+        This is the work section
+    </p>
+</div>
+
+<style>
+    p {
+        color : var(--color-e);
+    }
+</style>

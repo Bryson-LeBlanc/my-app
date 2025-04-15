@@ -4,6 +4,7 @@
     import Work from '$lib/Pieces/Work.svelte';
     import Projects from '$lib/Pieces/Projects.svelte';
     import Education from '$lib/Pieces/Education.svelte';
+    import Break from '$lib/Pieces/Break.svelte';
 
     let { data } : PageProps = $props();
     console.log(data.titles);
@@ -17,16 +18,16 @@
 
 <!-- Bio -->
 <Bio />
-
+<Break />
 <!-- Work -->
 <Work />
-
+<Break />
 <!-- Projects -->
 <Projects />
-
+<Break />
 <!-- Education -->
 <Education />
-
+<Break />
 
 <style>
 

@@ -2,6 +2,14 @@
 
 </script>
 
-<p>
-    This is the education section
-</p>
+<div class="block">
+    <p>
+        This is the education section
+    </p>
+</div>
+
+<style>
+    p {
+        color : var(--color-e);
+    }
+</style>

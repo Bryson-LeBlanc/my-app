@@ -1,6 +1,6 @@
 :root {
-	--color-a: #917fbe;
-	--color-b: #164216be;
+	--color-a: #d7c6ff;
+	--color-b: #054e05cc;
 	--color-c: #4F4F4F;
     --color-d: #000;
 	--color-e: #ffffff;
@@ -15,4 +15,26 @@ html {
     scroll-behavior: smooth;
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	margin: min(5vw, 40px) auto;
+	background: #fff;
+	color: var(--color-l);
+	max-width: 1080px;
+	box-shadow: 0 0 10px rgba(50, 50, 50, 0.17);
+	width: 100%;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.block {
+        background-color: var(--color-c);
+        display: flex;
+        margin-top:5px;
+        margin-bottom:5px;
+        margin-left:10px;
+        margin-right:10px;
+        border-radius: 5px;
 }
