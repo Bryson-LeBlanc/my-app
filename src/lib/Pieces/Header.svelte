@@ -10,7 +10,7 @@
             </h1>
        </div>
        <div class="contact">
-            <h4 id="email">brysonleblanc2004@gmail.com</h4>
+            <h4 id="email"><a href="mailto:brysonleblanc2004@gmail.com">brysonleblanc2004@gmail.com</a></h4>
             <h4 id="phone">404-797-1969</h4>
        </div>
     
@@ -25,7 +25,7 @@
         
     }
 
-    h1, h4 {
+    h1, h4, a {
         color : var(--color-e)
     }
 

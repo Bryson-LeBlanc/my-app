@@ -26,11 +26,12 @@
                  Georgia in 2022 to begin studying.
             </p>
             <p>
-                My first experience in industry was with ROADSYNC in Atlanta as a Software Engineering intern, 
+                My first experience in industry was with <a href="https://roadsync.com/">RoadSync</a> in Atlanta as a Software Engineering intern, 
                 where I worked mostly with data visualization and system health. I continue part time work here Summer of 2025.
             </p>
             <p>
-                Following my sophomore year, I began a Full-Stack web development Co-Op with Auburn University CAMPUS WEB SOLUTIONS,
+                Following my sophomore year, I began a Full-Stack web development Co-Op with Auburn University 
+                <a href="https://cws.auburn.edu/cws">Campus Web Solutions</a>,
                 which operates in the Office of Information Technology. Currently in my second semester of the program.
             </p>
         </div>
@@ -44,6 +45,11 @@
 <style>
     p, h2 {
         color : var(--color-e);
+    }
+
+    a {
+        color: var(--color-a);
+        font-weight: bold;
     }
 
     button {
