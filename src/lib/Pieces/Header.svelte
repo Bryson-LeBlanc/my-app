@@ -9,12 +9,12 @@
                 Bryson LeBlanc
             </h1>
        </div>
-    
-       <div class="info">
-            <button class="nav">git</button>
-            <button class="nav">in</button>
-            <button class="nav">resume</button>
+       <div class="contact">
+            <h4 id="email">brysonleblanc2004@gmail.com</h4>
+            <h4 id="phone">404-797-1969</h4>
        </div>
+    
+       
     </div>
    
 </header>
@@ -25,8 +25,22 @@
         
     }
 
-    h1 {
+    h1, h4 {
         color : var(--color-e)
+    }
+
+    h4 {
+        margin-bottom : 5px;
+        margin-top : 5px;
+        width: 290px;
+    }
+
+    #phone {
+        margin-left : 52%;
+    }
+
+    #email {
+        margin-right: 5%;
     }
 
     .head-block {
