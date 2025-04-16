@@ -7,16 +7,16 @@
     <div id="head" class="flex">
         <h2>About Me</h2>
         <div class="info flex">
-            <button class="nav" aria-label="github">
+            <a href="https://github.com/Bryson-LeBlanc" class="nav" aria-label="github">
                 <img class="icon" src="src\lib\static\gitICON.png" alt="git">
-            </button>
-            <button class="nav" aria-label="linkedin">
+            </a>
+            <a href="https://www.linkedin.com/in/b-w-l/" class="nav" aria-label="linkedin">
                 <img class="icon" src="src\lib\static\inICON.png" alt="in">
-            </button>
-            <button id="resume" class="nav flex" aria-label="resume">
+            </a>
+            <a href="src/lib/static/bwlRES.pdf" id="resume" class="nav flex" aria-label="resume">
                 <img class="icon" src="src\lib\static\resume.jpg" alt="pdf">
                 <strong>Resume</strong>
-            </button>
+            </a>
         </div>
     </div>
     <div id="bio" class="flex">
@@ -47,15 +47,16 @@
         color : var(--color-e);
     }
 
+    strong {
+        color : var(--color-d);
+    }
+
     a {
         color: var(--color-a);
         font-weight: bold;
-    }
-
-    button {
         cursor : pointer;
-    } 
-        button:hover {
+        padding:3px 6px 3px 6px;
+    } a:hover {
             border: 3px solid #d7c6ff;
         }
 
@@ -80,6 +81,7 @@
 
     #resume {
         align-items: center;
+        text-decoration: none;
     }
 
     .col {
