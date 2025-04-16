@@ -29,6 +29,10 @@
         color : var(--color-e)
     }
 
+    h1 {
+        font-size:45px;
+    }
+
     h4 {
         margin-bottom : 5px;
         margin-top : 5px;
