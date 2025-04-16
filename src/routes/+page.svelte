@@ -19,11 +19,11 @@
 <!-- Bio -->
 <Bio />
 <Break />
-<!-- Work -->
-<Work />
-<Break />
 <!-- Projects -->
 <Projects />
+<Break />
+<!-- Work -->
+<Work />
 <Break />
 <!-- Education -->
 <Education />
