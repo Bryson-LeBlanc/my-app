@@ -6,7 +6,7 @@
             role: "Full-Stack Web Developer",
             date: "May 2024 - August 2024, Jan 2025 - Present",
             img: "src/lib/static/cws.jpg",
-            description: "Working on various web development projects for Auburn University, focusing on enhancing user experience and system functionality.",
+            description: ["Working on various web development projects for Auburn University, focusing on enhancing user experience and system functionality."],
             location: "Auburn, AL"
         },
         roadsync: {
@@ -14,7 +14,7 @@
             role: "Software Engineering Intern",
             date: "May 2023 - Aug 2023, May 2025 - Aug 2025",
             img: "src/lib/static/roadsync.png",
-            description: "Contributed to data visualization and system health monitoring, improving operational efficiency.",
+            description: ["Contributed to data visualization and system health monitoring, improving operational efficiency."],
             location: "Atlanta, GA"
         }
     }
@@ -29,7 +29,7 @@
 </div>
 
 <style>
-    p, h2 {
+    h2 {
         color : var(--color-e);
     }
 

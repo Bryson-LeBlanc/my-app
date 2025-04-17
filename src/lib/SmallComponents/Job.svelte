@@ -5,7 +5,7 @@
         role: string;
         date: string;
         img: string;
-        description: string;
+        description: string[];
         location : string;
     };
 </script>
@@ -14,6 +14,7 @@
     <div class="job-header flex">
         <img src={details.img} alt={details.title} />
         <div class="main-details">
+            <h3 class="role">{details.role}</h3>
             <div id="title-place" class="flex">
                 <h3>{details.title}</h3>
                 <p class="hyphen">-</p> 
@@ -25,10 +26,16 @@
         </div>
     </div>
     <div class="job-details">
-        
-        <p class="role">{details.role}</p>
-        <p class="description">{details.description}</p>
+        <ul class="description">
+            {#each details.description as line}
+                <li>{line}</li>
+            {/each}
+        </ul>
     </div>
+
+    <br/>
+    <br/>
+
 </div>
 
 
@@ -36,13 +43,13 @@
     img {
         width : 100px;
         margin-left:20px;
-        margin-top: 30px;
         border: 3px solid var(--color-d);
     }
 
-    h3, p, h4 {
+    h3, p, h4, li {
         color: var(--color-e);
     }
+
 
     .hyphen {
         color: var(--color-e);
@@ -53,6 +60,11 @@
 
     .description {
         margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .dateTime {
+        margin : 0px 0px 0px 20px;
     }
 
     .flex {
@@ -60,4 +72,11 @@
         align-items: center;
     }
 
+    h3 {
+        margin: 0px 0px 0px 20px;
+    }
+
+    #title-place {
+        height: 40px;
+    }
 </style>
