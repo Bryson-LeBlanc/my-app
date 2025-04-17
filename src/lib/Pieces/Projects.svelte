@@ -74,19 +74,25 @@
         </ul>
     </div>
     
-    <Project details={projects.voting}/>
-    <Project details={projects.debug}/>
-    <Project details={projects.pokemon}/>
-    <Project details={projects.dataP}/>
-    
+    <div class="is-selected yes">
+        <Project details={projects.voting}/>
+    </div>
+    <div class="is-selected no">
+        <Project details={projects.debug}/>
+    </div>
+    <div class="is-selected no">
+        <Project details={projects.pokemon}/>
+    </div>
+    <div class="is-selected no">
+        <Project details={projects.dataP}/>
+    </div>
+
 </div>
 
 <style>
-    p, h2 {
+    h2 {
         color : var(--color-e);
     }
-
-    
 
     ul {
         display:flex;
@@ -148,6 +154,9 @@
         text-decoration: underline;
     }
 
+    .no {
+        display:none;
+    }
 
     #head {
         display: flex;
