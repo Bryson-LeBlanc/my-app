@@ -1,5 +1,5 @@
 <script lang='ts'>
-
+    import Piano from '$lib/SmallComponents/Piano.svelte';
 </script>
 
 
@@ -9,6 +9,8 @@
 <p>
     This is the footer
 </p>
+
+<Piano/>
 
 <style>
     h2 {
