@@ -7,6 +7,7 @@
         img: string;
         description: string[];
         location : string;
+        techs : string[];
     };
 </script>
 

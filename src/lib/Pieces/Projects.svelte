@@ -1,5 +1,5 @@
 <script lang='ts'>
-
+    import Project from '$lib/SmallComponents/Project.svelte';
 </script>
 
 <div class="block">
@@ -46,9 +46,12 @@
             </li>
         </ul>
     </div>
-    <p>
-        This is the projects section
-    </p>
+    
+    <Project/>
+    <Project/>
+    <Project/>
+    <Project/>
+    
 </div>
 
 <style>

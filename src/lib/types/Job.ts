@@ -3,5 +3,6 @@ export interface Job {
 	role: string;
 	data: string;
 	img: number;
-	description: string;
+	description: string[];
+	techs : string[];
 }
