@@ -2,7 +2,31 @@
     import Project from '$lib/SmallComponents/Project.svelte';
     import type { ProjType } from "$lib/types/ProjectType.ts";
 
-    let {projects} = $props<{ projects: ProjType[] }>();
+    // let {projects} = $props<{ projects: ProjType[] }>();
+
+    let projects: { [key: string]: ProjType } = {
+        voting: {
+            name: "Voting",
+            description: ["A voting app"],
+            picLink: "src/lib/static/placeholder.png"
+        },
+        debug: {
+            name: "Debug Extension",
+            description: ["A browser extension for debugging web pages"],
+            picLink: "src/lib/static/placeholder.png"
+        },
+        pokemon: {
+            name: "Pokémon App",
+            description: ["An app for Pokémon information"],
+            picLink: "src/lib/static/placeholder.png"
+        },
+        dataP: {
+            name: "Data Thing",
+            description: ["A project for data manipulation"],
+            picLink: "src/lib/static/placeholder.png"
+        }
+    };
+
 </script>
 
 <div class="block">

@@ -7,7 +7,7 @@ import type { ProjType } from '$lib/types/ProjectType';
  */
 export const fetchMdProjects = async (): Promise<ProjType[]> => {
 	// Use import.meta.glob to get all markdown files in the skills directory
-	const allFiles = import.meta.glob('md/*.md');
+	const allFiles = import.meta.glob('/md/*.md');
 	// Convert object to array of entries for easier processing
 	const iterableFiles = Object.entries(allFiles);
 
