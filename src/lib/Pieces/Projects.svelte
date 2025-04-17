@@ -7,7 +7,7 @@
     let projects: { [key: string]: ProjType } = {
         voting: {
             name: "Voting",
-            description: ["A voting app"],
+            description: ["A voting app", ".NET app", "Built in the full stack on a 6 dev team"],
             picLink: "src/lib/static/placeholder.png"
         },
         debug: {
