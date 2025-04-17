@@ -1,5 +1,8 @@
 <script lang='ts'>
     import Project from '$lib/SmallComponents/Project.svelte';
+    import type { ProjType } from "$lib/types/ProjectType.ts";
+
+    let {projects} = $props<{ projects: ProjType[] }>();
 </script>
 
 <div class="block">
@@ -47,10 +50,10 @@
         </ul>
     </div>
     
-    <Project/>
-    <Project/>
-    <Project/>
-    <Project/>
+    <Project details={projects.voting}/>
+    <Project details={projects.debug}/>
+    <Project details={projects.pokemon}/>
+    <Project details={projects.dataP}/>
     
 </div>
 

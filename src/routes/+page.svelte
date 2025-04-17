@@ -20,7 +20,7 @@
 <Bio />
 <Break />
 <!-- Projects -->
-<Projects />
+<Projects projects={data.projects}/>
 <Break />
 <!-- Work -->
 <Work />
