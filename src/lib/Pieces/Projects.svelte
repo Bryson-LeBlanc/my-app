@@ -1,5 +1,32 @@
 <script lang='ts'>
     import Project from '$lib/SmallComponents/Project.svelte';
+    import type { ProjType } from "$lib/types/ProjectType.ts";
+
+    // let {projects} = $props<{ projects: ProjType[] }>();
+
+    let projects: { [key: string]: ProjType } = {
+        voting: {
+            name: "Voting",
+            description: ["A voting app", ".NET app", "Built in the full stack on a 6 dev team"],
+            picLink: "src/lib/still/placeholder.png"
+        },
+        debug: {
+            name: "Debug Extension",
+            description: ["A browser extension for debugging web pages"],
+            picLink: "src/lib/still/placeholder.png"
+        },
+        pokemon: {
+            name: "Pokémon App",
+            description: ["An app for Pokémon information"],
+            picLink: "src/lib/still/placeholder.png"
+        },
+        dataP: {
+            name: "Data Thing",
+            description: ["A project for data manipulation"],
+            picLink: "src/lib/still/placeholder.png"
+        }
+    };
+
 </script>
 
 <div class="block">
@@ -12,7 +39,7 @@
             <li class="projNav">
                 <button class="projNavButton" aria-label="project">
                     <div class="imgTextContainer">
-                        <img src="src/lib/static/placeholder.png" alt="project" class="projIcon">
+                        <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
                         <span class="overlayText selected">Voting</span>
                     </div>
                 </button>
@@ -20,7 +47,7 @@
             <li class="projNav">
                 <button class="projNavButton" aria-label="project">
                     <div class="imgTextContainer">
-                        <img src="src/lib/static/placeholder.png" alt="project" class="projIcon">
+                        <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
                         <span class="overlayText">Debug Extension</span>
                     </div>
                 </button>
@@ -28,7 +55,7 @@
             <li class="projNav">
                 <button class="projNavButton" aria-label="project">
                     <div class="imgTextContainer">
-                        <img src="src/lib/static/placeholder.png" alt="project" class="projIcon">
+                        <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
                         <span class="overlayText">Pokémon App</span>
                     </div>
                 </button>
@@ -36,7 +63,7 @@
             <li class="projNav">
                 <button class="projNavButton" aria-label="project">
                     <div class="imgTextContainer">
-                        <img src="src/lib/static/placeholder.png" alt="project" class="projIcon">
+                        <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
                         <span class="overlayText">Data Thing</span>
                     </div>
                 </button>
@@ -47,19 +74,25 @@
         </ul>
     </div>
     
-    <Project/>
-    <Project/>
-    <Project/>
-    <Project/>
-    
+    <div class="is-selected yes">
+        <Project details={projects.voting}/>
+    </div>
+    <div class="is-selected no">
+        <Project details={projects.debug}/>
+    </div>
+    <div class="is-selected no">
+        <Project details={projects.pokemon}/>
+    </div>
+    <div class="is-selected no">
+        <Project details={projects.dataP}/>
+    </div>
+
 </div>
 
 <style>
-    p, h2 {
+    h2 {
         color : var(--color-e);
     }
-
-    
 
     ul {
         display:flex;
@@ -121,6 +154,9 @@
         text-decoration: underline;
     }
 
+    .no {
+        display:none;
+    }
 
     #head {
         display: flex;

@@ -6,8 +6,8 @@
     import Education from '$lib/Pieces/Education.svelte';
     import Break from '$lib/Pieces/Break.svelte';
 
-    let { data } : PageProps = $props();
-    console.log(data.titles);
+    // let { data } : PageProps = $props();
+    // console.log(data.titles);
 </script>
 
 <link rel="stylesheet" href="src/lib/index.css">
@@ -20,6 +20,7 @@
 <Bio />
 <Break />
 <!-- Projects -->
+<!-- <Projects projects={data.projects}/> -->
 <Projects />
 <Break />
 <!-- Work -->

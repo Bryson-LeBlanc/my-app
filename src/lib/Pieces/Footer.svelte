@@ -6,9 +6,6 @@
 <div id="head">
     <h2>Contact Me!</h2>
 </div>
-<p>
-    This is the footer
-</p>
 
 <Piano/>
 
