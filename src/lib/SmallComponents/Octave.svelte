@@ -64,5 +64,8 @@
     }
     .key-button:hover {
         background-color: lightgray;
+        transform: translateY(-1px); /* Moves the key down when pressed */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* deeper, smaller shadow */
     }
+    
 </style>
