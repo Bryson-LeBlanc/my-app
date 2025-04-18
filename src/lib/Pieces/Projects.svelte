@@ -8,22 +8,22 @@
         voting: {
             name: "Voting",
             description: ["A voting app", ".NET app", "Built in the full stack on a 6 dev team"],
-            picLink: "src/lib/static/placeholder.png"
+            picLink: "src/lib/still/placeholder.png"
         },
         debug: {
             name: "Debug Extension",
             description: ["A browser extension for debugging web pages"],
-            picLink: "src/lib/static/placeholder.png"
+            picLink: "src/lib/still/placeholder.png"
         },
         pokemon: {
             name: "Pokémon App",
             description: ["An app for Pokémon information"],
-            picLink: "src/lib/static/placeholder.png"
+            picLink: "src/lib/still/placeholder.png"
         },
         dataP: {
             name: "Data Thing",
             description: ["A project for data manipulation"],
-            picLink: "src/lib/static/placeholder.png"
+            picLink: "src/lib/still/placeholder.png"
         }
     };
 
@@ -39,7 +39,7 @@
             <li class="projNav">
                 <button class="projNavButton" aria-label="project">
                     <div class="imgTextContainer">
-                        <img src="src/lib/static/placeholder.png" alt="project" class="projIcon">
+                        <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
                         <span class="overlayText selected">Voting</span>
                     </div>
                 </button>
@@ -47,7 +47,7 @@
             <li class="projNav">
                 <button class="projNavButton" aria-label="project">
                     <div class="imgTextContainer">
-                        <img src="src/lib/static/placeholder.png" alt="project" class="projIcon">
+                        <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
                         <span class="overlayText">Debug Extension</span>
                     </div>
                 </button>
@@ -55,7 +55,7 @@
             <li class="projNav">
                 <button class="projNavButton" aria-label="project">
                     <div class="imgTextContainer">
-                        <img src="src/lib/static/placeholder.png" alt="project" class="projIcon">
+                        <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
                         <span class="overlayText">Pokémon App</span>
                     </div>
                 </button>
@@ -63,7 +63,7 @@
             <li class="projNav">
                 <button class="projNavButton" aria-label="project">
                     <div class="imgTextContainer">
-                        <img src="src/lib/static/placeholder.png" alt="project" class="projIcon">
+                        <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
                         <span class="overlayText">Data Thing</span>
                     </div>
                 </button>
