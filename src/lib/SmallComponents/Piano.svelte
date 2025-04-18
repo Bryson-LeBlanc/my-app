@@ -2,8 +2,12 @@
     import Octave from '$lib/SmallComponents/Octave.svelte';
     import ThirdOctave from '$lib/SmallComponents/ThirdOctave.svelte';
     import { onMount } from 'svelte';
-
+    import { keyDownNote } from '$lib/utils/playNote';
     onMount(() => {
+
+        document.addEventListener('keydown', (event) => {
+            keyDownNote(event);
+        });
         const keys = document.querySelectorAll('.key-button');
         keys.forEach(key => {
             key.addEventListener('click', () => {
