@@ -59,8 +59,4 @@
     .name {
         margin-left : 30px;
     }
-
-    .info {
-        margin-right: 30px;
-    }
 </style>
