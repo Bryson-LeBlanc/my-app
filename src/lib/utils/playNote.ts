@@ -1,7 +1,8 @@
-import { onMount } from 'svelte';
 
-export async function keyDownNote(event: KeyboardEvent): Promise<void> {
+export function keyDownNote(event: KeyboardEvent, pressedKeys : Set<string>, activeAudios : Map<string, HTMLAudioElement>): void {
   const key = event.key.toLowerCase();
+  if (pressedKeys.has(key)) return;
+  pressedKeys.add(key);
 
   let keyMap: { [key: string]: string } = {
     'q': 'c3',
@@ -60,5 +61,10 @@ export async function keyDownNote(event: KeyboardEvent): Promise<void> {
 
     const url = new URL("../assets/" + note + ".mp3", import.meta.url).href;
     const audio = new Audio(url);
-    await audio.play();
+    audio.loop = true;
+    audio.play();
+    activeAudios.set(key, audio);
+    
 }
+
+

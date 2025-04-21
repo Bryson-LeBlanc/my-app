@@ -4,9 +4,19 @@
     import ThirdOctave from '$lib/SmallComponents/ThirdOctave.svelte';
     import { onMount } from 'svelte';
     import { keyDownNote } from '$lib/utils/playNote';
+    import { stopNote } from '$lib/utils/stopNote';
     onMount(() => {
-        const handleKeyDown = (event: KeyboardEvent) => {
-                keyDownNote(event);
+        const pressedKeys = new Set<string>();
+        const activeAudios = new Map<string, HTMLAudioElement>();
+
+
+        function handleKeyDown(event: KeyboardEvent) {
+                keyDownNote(event, pressedKeys, activeAudios);
+        };
+
+        function handleKeyUp(event: KeyboardEvent) {
+            const key = event.key.toLowerCase();
+            stopNote(key, pressedKeys, activeAudios);
         };
         const keyDownToggle = document.getElementById('keyDownToggle');
         let keyShows = document.querySelectorAll(".keyDown-label");
@@ -18,17 +28,19 @@
                     key.removeAttribute('hidden');
                 });
                 document.addEventListener('keydown', handleKeyDown);
+                document.addEventListener('keyup', handleKeyUp);
             } else {
                 keyDownToggle.innerHTML = "Toggle KeyBoard";
                 keyShows.forEach(key => {
                     key.setAttribute('hidden', "true");
                 });
                 document.removeEventListener('keydown', handleKeyDown);
+                document.removeEventListener('keyup', handleKeyUp);
             }
             
         })
         const keys = document.querySelectorAll('.key-button');
-        keys.forEach(key => {
+        keys.forEach(key => { // handle clicking the keys with the mouse
             key.addEventListener('click', () => {
                 const keyParent = key.parentElement;
                 const note = keyParent?.getAttribute('data-note');
