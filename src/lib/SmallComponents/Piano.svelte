@@ -4,10 +4,22 @@
     import { onMount } from 'svelte';
     import { keyDownNote } from '$lib/utils/playNote';
     onMount(() => {
+        const handleKeyDown = (event: KeyboardEvent) => {
+                keyDownNote(event);
+        };
+        const keyDownToggle = document.getElementById('keyDownToggle');
+        keyDownToggle?.addEventListener('click', () => {
+            
 
-        document.addEventListener('keydown', (event) => {
-            keyDownNote(event);
-        });
+            if (keyDownToggle.innerHTML == "Toggle KeyBoard") {
+                keyDownToggle.innerHTML = "Turn off Keyboard Use";
+                document.addEventListener('keydown', handleKeyDown);
+            } else {
+                keyDownToggle.innerHTML = "Toggle KeyBoard";
+                document.removeEventListener('keydown', handleKeyDown);
+            }
+            
+        })
         const keys = document.querySelectorAll('.key-button');
         keys.forEach(key => {
             key.addEventListener('click', () => {
@@ -54,17 +66,21 @@
     });
 </script>
 
-<div id="piano">
-    <div class="octave 1" data-octave="first">
-        <Octave />
-    </div>
-    <div class="octave 2" data-octave="second">
-        <Octave />
-    </div>
-    <div class="octave 3" data-octave="third">
-        <ThirdOctave />
+<div class="flex">
+    <button id="keyDownToggle">Toggle KeyBoard</button>
+    <div id="piano">
+        <div class="octave 1" data-octave="first">
+            <Octave />
+        </div>
+        <div class="octave 2" data-octave="second">
+            <Octave />
+        </div>
+        <div class="octave 3" data-octave="third">
+            <ThirdOctave />
+        </div>
     </div>
 </div>
+
 
 <style>
     .octave {
@@ -72,6 +88,10 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
     }
     #piano {
         display: flex;
@@ -81,5 +101,16 @@
         width: 100%;
         height: 100%;
         margin-bottom : 10px;
+    }
+    #keyDownToggle {
+        padding: 5px 10px;
+        margin-bottom:10px;
+        background-color: var(--color-b);
+        color:white;
+        width:160px;
+        margin-left:15%;
+        border-radius: 5px;
+        cursor: pointer;
+        border:black;
     }
 </style>
