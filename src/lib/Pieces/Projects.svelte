@@ -1,6 +1,7 @@
 <script lang='ts'>
     import Project from '$lib/SmallComponents/Project.svelte';
     import type { ProjType } from "$lib/types/ProjectType.ts";
+    import { onMount } from 'svelte';
 
     // let {projects} = $props<{ projects: ProjType[] }>();
 
@@ -8,7 +9,7 @@
         voting: {
             name: "Voting",
             description: ["A voting app", ".NET app", "Built in the full stack on a 6 dev team"],
-            picLink: "src/lib/still/placeholder.png"
+            picLink: "src/lib/still/voting.png"
         },
         debug: {
             name: "Debug Extension",
@@ -18,7 +19,7 @@
         pokemon: {
             name: "Pokémon App",
             description: ["An app for Pokémon information"],
-            picLink: "src/lib/still/placeholder.png"
+            picLink: "src/lib/still/poke.png"
         },
         dataP: {
             name: "Data Thing",
@@ -26,6 +27,101 @@
             picLink: "src/lib/still/placeholder.png"
         }
     };
+
+    onMount(() => {
+        let overlays = document.querySelectorAll('.overlayText');
+        function handleOverlay(overlays : NodeListOf<Element>, e : Event) {
+            let i = 0;
+            overlays.forEach((overlay) => {
+                if (overlay.classList.contains('selected')) {
+                    i = parseInt(overlay.getAttribute('data-index') || '0', 10);
+                    overlay.classList.remove('selected');
+                }
+            });
+            let target = e.target as HTMLButtonElement; // what was clicked
+            let projNav = target.closest('.box') as HTMLLIElement;
+            if (projNav == null) { // we are using arrow keys in this case
+                if (target.innerHTML == "˂") { // left nav
+                    let nextI = (i === 0) ? 3 : i - 1;
+                    overlays[nextI].classList.add('selected');
+                    
+                } else { // right nav
+                    let nextI = (i === 3) ? 0 : i + 1;
+                    overlays[nextI].classList.add('selected');
+                }
+                
+                
+                
+            } else {
+                let overlayText = projNav.querySelector('.overlayText') as HTMLSpanElement;
+                overlayText.classList.add('selected');
+            }
+        
+        }
+
+        // handle project navigation via title boxes
+        const projNavButtons = document.querySelectorAll('.box');
+        projNavButtons.forEach((button) => {
+            button.addEventListener('click', (e) => {
+                let target = e.target as HTMLButtonElement; // what was clicked
+                let projNav = target.closest('.box') as HTMLLIElement;
+
+                let projIndex = Array.from(projNavButtons).indexOf(projNav); // index of clicked project
+                let projDivs = document.querySelectorAll('.is-selected');
+                projDivs.forEach((div, index) => {
+                    // show and hide proper projects
+                    if (index === projIndex) {
+                        div.classList.add('yes');
+                        div.classList.remove('no');
+                    } else {
+                        div.classList.add('no');
+                        div.classList.remove('yes');
+                    }
+                });
+                handleOverlay(overlays, e);
+            });
+        });
+
+        // handle project navigation via arrows
+        const projNavArrows = document.querySelectorAll('.arrow');
+        projNavArrows.forEach((arrow) => {
+            arrow.addEventListener('click', (e) => {
+                if (arrow.innerHTML == "˂") { // left nav
+                    let projDivs = document.querySelectorAll('.is-selected');
+                    let selectedIndex = Array.from(projDivs).findIndex(div => div.classList.contains('yes'));
+                    if (selectedIndex > 0) {
+                        projDivs[selectedIndex].classList.add('no');
+                        projDivs[selectedIndex].classList.remove('yes');
+                        projDivs[selectedIndex - 1].classList.add('yes');
+                        projDivs[selectedIndex - 1].classList.remove('no');
+                    } else {
+                        projDivs[selectedIndex].classList.add('no');
+                        projDivs[selectedIndex].classList.remove('yes');
+                        projDivs[3].classList.add('yes');
+                        projDivs[3].classList.remove('no');
+                    }
+                } else { // right nav
+                    let projDivs = document.querySelectorAll('.is-selected');
+                    let selectedIndex = Array.from(projDivs).findIndex(div => div.classList.contains('yes'));
+                    if (selectedIndex < 3) {
+                        projDivs[selectedIndex].classList.add('no');
+                        projDivs[selectedIndex].classList.remove('yes');
+                        projDivs[selectedIndex + 1].classList.add('yes');
+                        projDivs[selectedIndex + 1].classList.remove('no');
+                    } else {
+                        projDivs[selectedIndex].classList.add('no');
+                        projDivs[selectedIndex].classList.remove('yes');
+                        projDivs[0].classList.add('yes');
+                        projDivs[0].classList.remove('no');
+                    }
+                }
+
+                handleOverlay(overlays, e);
+            });
+        });
+    });
+
+    
 
 </script>
 
@@ -37,34 +133,34 @@
                 <button class="projNavButton arrow">˂</button>
             </li>
             <li class="projNav">
-                <button class="projNavButton" aria-label="project">
+                <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
                         <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
-                        <span class="overlayText selected">Voting</span>
+                        <span class="overlayText selected" data-index="0">Voting</span>
                     </div>
                 </button>
             </li>
             <li class="projNav">
-                <button class="projNavButton" aria-label="project">
+                <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
                         <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
-                        <span class="overlayText">Debug Extension</span>
+                        <span class="overlayText" data-index="1">Debug Extension</span>
                     </div>
                 </button>
             </li>
             <li class="projNav">
-                <button class="projNavButton" aria-label="project">
+                <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
                         <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
-                        <span class="overlayText">Pokémon App</span>
+                        <span class="overlayText" data-index="2">Pokémon App</span>
                     </div>
                 </button>
             </li>
             <li class="projNav">
-                <button class="projNavButton" aria-label="project">
+                <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
                         <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
-                        <span class="overlayText">Data Thing</span>
+                        <span class="overlayText" data-index="3">Data Thing</span>
                     </div>
                 </button>
             </li>
@@ -74,16 +170,16 @@
         </ul>
     </div>
     
-    <div class="is-selected yes">
+    <div class="is-selected yes" data-index="0">
         <Project details={projects.voting}/>
     </div>
-    <div class="is-selected no">
+    <div class="is-selected no" data-index="1">
         <Project details={projects.debug}/>
     </div>
-    <div class="is-selected no">
+    <div class="is-selected no" data-index="2">
         <Project details={projects.pokemon}/>
     </div>
-    <div class="is-selected no">
+    <div class="is-selected no" data-index="3">
         <Project details={projects.dataP}/>
     </div>
 
@@ -143,7 +239,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 10px;
+        font-size: 11px;
         font-weight: bold;
         text-shadow: 1px 1px 2px black;
         pointer-events: none;
@@ -156,6 +252,10 @@
 
     .no {
         display:none;
+    }
+
+    .yes {
+        display:block;
     }
 
     #head {

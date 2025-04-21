@@ -47,4 +47,10 @@
     .project-details {
         margin-bottom: 20px;
     }
+
+    .project-img {
+        width: 500px;
+        height: 250px;
+        object-fit: cover;
+    }
 </style>
