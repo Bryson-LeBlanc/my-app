@@ -1,5 +1,6 @@
 <script lang="ts">
     import Octave from '$lib/SmallComponents/Octave.svelte';
+    import SecondOctave from '$lib/SmallComponents/SecondOctave.svelte';
     import ThirdOctave from '$lib/SmallComponents/ThirdOctave.svelte';
     import { onMount } from 'svelte';
     import { keyDownNote } from '$lib/utils/playNote';
@@ -8,14 +9,20 @@
                 keyDownNote(event);
         };
         const keyDownToggle = document.getElementById('keyDownToggle');
+        let keyShows = document.querySelectorAll(".keyDown-label");
         keyDownToggle?.addEventListener('click', () => {
-            
 
             if (keyDownToggle.innerHTML == "Toggle KeyBoard") {
                 keyDownToggle.innerHTML = "Turn off Keyboard Use";
+                keyShows.forEach(key => {
+                    key.removeAttribute('hidden');
+                });
                 document.addEventListener('keydown', handleKeyDown);
             } else {
                 keyDownToggle.innerHTML = "Toggle KeyBoard";
+                keyShows.forEach(key => {
+                    key.setAttribute('hidden', "true");
+                });
                 document.removeEventListener('keydown', handleKeyDown);
             }
             
@@ -73,7 +80,7 @@
             <Octave />
         </div>
         <div class="octave 2" data-octave="second">
-            <Octave />
+            <SecondOctave />
         </div>
         <div class="octave 3" data-octave="third">
             <ThirdOctave />

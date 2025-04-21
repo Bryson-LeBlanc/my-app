@@ -1,61 +1,61 @@
 <div class="white-key" data-note="C">
     <button class="white key-button" aria-label="key">
-        <h4 class="keyDown-label whiteDown" hidden>q</h4>
+        <h4 class="keyDown-label whiteDown" hidden>i</h4>
     </button>
 </div>
 <div class="black-key" data-note="C#">
     <button class="black key-button" aria-label="key">
-        <h4 class="keyDown-label blackDown" hidden>2</h4>
+        <h4 class="keyDown-label blackDown" hidden>9</h4>
     </button>
 </div>
 <div class="white-key" data-note="D">
     <button class="white key-button" aria-label="key">
-        <h4 class="keyDown-label whiteDown" hidden>w</h4>
+        <h4 class="keyDown-label whiteDown" hidden>o</h4>
     </button>
 </div>
 <div class="black-key" data-note="D#">
     <button class="black key-button" aria-label="key">
-        <h4 class="keyDown-label blackDown" hidden>3</h4>
+        <h4 class="keyDown-label blackDown" hidden>0</h4>
     </button>
 </div>
 <div class="white-key" data-note="E">
     <button class="white key-button" aria-label="key">
-        <h4 class="keyDown-label whiteDown" hidden>e</h4>
+        <h4 class="keyDown-label whiteDown" hidden>p</h4>
     </button>
 </div>
 <div class="white-key" data-note="F">
     <button class="white key-button" aria-label="key">
-        <h4 class="keyDown-label whiteDown" hidden>r</h4>
+        <h4 class="keyDown-label whiteDown" hidden>a</h4>
     </button>
 </div>
 <div class="black-key" data-note="F#">
     <button class="black key-button" aria-label="key">
-        <h4 class="keyDown-label blackDown" hidden>5</h4>
+        <h4 class="keyDown-label blackDown" hidden>s</h4>
     </button>
 </div>
 <div class="white-key" data-note="G">
     <button class="white key-button" aria-label="key">
-        <h4 class="keyDown-label whiteDown" hidden>t</h4>
+        <h4 class="keyDown-label whiteDown" hidden>d</h4>
     </button>
 </div>
 <div class="black-key" data-note="G#">
     <button class="black key-button" aria-label="key">
-        <h4 class="keyDown-label blackDown" hidden>6</h4>
+        <h4 class="keyDown-label blackDown" hidden>f</h4>
     </button>
 </div>
 <div class="white-key" data-note="A">
     <button class="white key-button" aria-label="key">
-        <h4 class="keyDown-label whiteDown" hidden>y</h4>
+        <h4 class="keyDown-label whiteDown" hidden>g</h4>
     </button>
 </div>
 <div class="black-key" data-note="A#">
     <button class="black key-button" aria-label="key">
-        <h4 class="keyDown-label blackDown" hidden>7</h4>
+        <h4 class="keyDown-label blackDown" hidden>h</h4>
     </button>
 </div>
 <div class="white-key" data-note="B">
     <button class="white key-button" aria-label="key">
-        <h4 class="keyDown-label whiteDown" hidden>u</h4>
+        <h4 class="keyDown-label whiteDown" hidden>j</h4>
     </button>
 </div>
 
