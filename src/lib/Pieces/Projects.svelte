@@ -187,7 +187,7 @@
 
 <style>
     h2 {
-        color : var(--color-e);
+        color : white;
     }
 
     ul {
