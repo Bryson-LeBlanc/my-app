@@ -24,7 +24,7 @@
 
 <div class="block">
     <div id="head">
-        <h2>Work</h2>
+        <h2>Experience</h2>
     </div>
     <Job details={data.cws}/>
     <Job details={data.roadsync}/>
