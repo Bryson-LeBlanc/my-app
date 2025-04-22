@@ -8,14 +8,25 @@
 <div class="project-details flex">
     <h2>{details.name}</h2>
     <div class="desc-pic">
-        <ul>
-            {#each details.description as desc}
-                <li>{desc}</li>
-            {/each}
-        </ul>
+        <div class="desc">
+            <ul>
+                {#each details.description as desc}
+                    <li>{desc}</li>
+                {/each}
+            </ul>
+            <div class="tools">
+                <ul>
+                    {#each details.tools as tool}
+                        <li>{tool}</li>
+                    {/each}
+                </ul>
+            </div>
+        </div>
+        
         <!-- <p>{details.description}</p> -->
         <img src={details.picLink} alt={details.name} class="project-img" />
     </div>
+    
 </div>
 
 
