@@ -60,6 +60,12 @@
             border: 3px solid #d7c6ff;
         }
 
+    @media (max-width: 800px) {
+        #me-pic {
+            display:none;
+        }
+	}
+
     .icon {
         height: 30px;
         width: 30px;

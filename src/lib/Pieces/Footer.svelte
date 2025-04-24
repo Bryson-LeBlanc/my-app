@@ -22,7 +22,11 @@
     <p>I'm pursuing opportunities that begin following May, 2026 (My graduation date)!</p>
 </div>
 <br />
-<Piano/>
+
+<div class="piano-wrapper">
+    <Piano/>
+</div>
+
 
 <footer>
 	<div class="info">
@@ -88,6 +92,12 @@
         flex-direction: row;
         align-items: center;
     }
+
+    @media (max-width: 800px) {
+		.piano-wrapper {
+            display:none;
+        }
+	}
 
     .contacts {
         margin-left:30px;
