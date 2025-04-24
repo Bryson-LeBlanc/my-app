@@ -97,6 +97,9 @@
 		.piano-wrapper {
             display:none;
         }
+        .source {
+            display :none;
+        }
 	}
 
     .contacts {

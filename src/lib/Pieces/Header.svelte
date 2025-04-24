@@ -13,8 +13,6 @@
             <h4 id="email"><a href="mailto:brysonleblanc2004@gmail.com">brysonleblanc2004@gmail.com</a></h4>
             <h4 id="phone">404-797-1969</h4>
        </div>
-    
-       
     </div>
    
 </header>
@@ -59,4 +57,23 @@
     .name {
         margin-left : 30px;
     }
+
+    @media (max-width: 800px) {
+            .head-block {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact {
+                margin-left: 30px;
+            }
+
+            #phone {
+                margin-left: 0;
+            }
+
+            #email {
+                margin-right: 0;
+            }
+        }
 </style>

@@ -64,4 +64,17 @@
         height: 250px;
         object-fit: cover;
     }
+
+    @media (max-width: 865px) {
+        .project-img {
+            width: 300px;
+            height: 150px;
+            object-fit: cover;
+        }
+    }
+    @media (max-width: 650px) {
+        .project-img {
+            display:none;
+        }
+    }
 </style>

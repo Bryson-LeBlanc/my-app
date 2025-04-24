@@ -132,7 +132,7 @@
             <li class="projNav left">
                 <button class="projNavButton arrow">˂</button>
             </li>
-            <li class="projNav">
+            <li class="projNav square">
                 <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
                         <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
@@ -140,7 +140,7 @@
                     </div>
                 </button>
             </li>
-            <li class="projNav">
+            <li class="projNav square">
                 <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
                         <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
@@ -148,7 +148,7 @@
                     </div>
                 </button>
             </li>
-            <li class="projNav">
+            <li class="projNav square">
                 <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
                         <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
@@ -156,7 +156,7 @@
                     </div>
                 </button>
             </li>
-            <li class="projNav">
+            <li class="projNav square">
                 <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
                         <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
@@ -265,4 +265,42 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    @media (max-width:1000px) {
+        .left {
+            width:10px;
+        }
+        .right {
+            width:10px;
+        }
+    }
+    @media (max-width: 865px) {
+		.square {
+            display:none;
+        }
+        .slideshow {
+            margin-right: 25%;
+        }
+        .left {
+            margin-right: 75px;
+        }
+        .right {
+            margin-left: 75px;
+        }
+	}
+    @media (max-width: 600px) {
+		.square {
+            display:none;
+        }
+        .slideshow {
+            margin-right: 25%;
+        }
+        .left {
+            margin-right: 10px;
+            width: 10px;
+        }
+        .right {
+            margin-left: 10px;
+        }
+	}
 </style>
