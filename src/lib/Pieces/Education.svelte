@@ -3,23 +3,23 @@
 </script>
 
 <div class="block">
-    <div id="head">
+    <div id="head" class="flexStack">
         <div class="education section">
             <h2>Education</h2>
             <div class="content">
-                <div class="flexLine">
-                    <img src="src/lib/still/auburn.png" alt="school" class="school-icon">
-                    <div class="school">
-                        <h4>Auburn University</h4>
-                        <h5>BSE - Software Engineering</h5>
-                        <h6>2022 - 2026</h6>
-                    </div>
+            <div class="flexLine">
+                <img src="src/lib/still/auburn.png" alt="school" class="school-icon">
+                <div class="school">
+                <h4>Auburn University</h4>
+                <h5>BSE - Software Engineering</h5>
+                <h6>2022 - 2026</h6>
                 </div>
-                <ul>
-                    <li>Dean's list - 2023, 2024, 2025</li>
-                    <li>3.82 GPA</li>
-                    <li>True Blue Scholarship Recipient</li>
-                </ul>
+            </div>
+            <ul>
+                <li>Dean's list - 2023, 2024, 2025</li>
+                <li>3.82 GPA</li>
+                <li>True Blue Scholarship Recipient</li>
+            </ul>
             </div>
         </div>
         <div class="certifications section">
@@ -94,4 +94,29 @@
         width: 2px;
         background-color: white;
     }
+
+    @media (max-width: 800px) {
+                .section {
+                    display: block;
+                    margin-bottom: 20px;
+                }
+
+                .flexLine {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .school {
+                    margin-left: 0;
+                    text-align: center;
+                }
+
+                img.school-icon {
+                    margin-bottom: 10px;
+                }
+                .flexStack {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
 </style>
