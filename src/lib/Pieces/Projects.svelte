@@ -8,7 +8,11 @@
     let projects: { [key: string]: ProjType } = {
         voting: {
             name: "Voting",
-            description: ["A voting app", ".NET app", "Built in the full stack on a 6 dev team"],
+            description: [
+                ".NET app written in C#, built for elections held at Auburn University (i.e. SGA, Homecoming Queen, etc.)",
+                "Accessible, responsive, and secure. Built in role based permissions for voters, admins, watchers, and election officials.", 
+                "Developed in the agile workflow with a team of 6 students alongside QA and project management teams.",
+            ],
             picLink: "src/lib/still/voting.png"
         },
         debug: {
@@ -18,7 +22,11 @@
         },
         pokemon: {
             name: "Pokémon App",
-            description: ["An app for Pokémon information"],
+            description: [
+                "Personal project in python to practice API usage and edge case handling.",
+                "Uses the PokéAPI to fetch Pokémon data and display it in a user-friendly interface.",
+                "Includes 'Who's that Pokémon?' game mode to test knowledge of Pokémon names and types."
+            ],
             picLink: "src/lib/still/poke.png"
         },
         dataP: {
@@ -135,7 +143,7 @@
             <li class="projNav square">
                 <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
-                        <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
+                        <img src="src/lib/still/voting.png" alt="project" class="projIcon">
                         <span class="overlayText selected" data-index="0">Voting</span>
                     </div>
                 </button>
@@ -151,7 +159,7 @@
             <li class="projNav square">
                 <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
-                        <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
+                        <img src="src/lib/still/poke.png" alt="project" class="projIcon">
                         <span class="overlayText" data-index="2">Pokémon App</span>
                     </div>
                 </button>

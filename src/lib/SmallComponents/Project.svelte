@@ -11,7 +11,7 @@
         <div class="desc">
             <ul>
                 {#each details.description as desc}
-                    <li>{desc}</li>
+                    <li class="details">{desc}</li>
                 {/each}
             </ul>
             <div class="tools">
@@ -46,6 +46,10 @@
         flex-direction: column;
         align-items: center;
         width:100%;
+    }
+
+    .details {
+        padding-bottom: 10px;
     }
 
     .desc-pic {
