@@ -17,8 +17,9 @@
             </div>
             <ul>
                 <li>Dean's list - 2023, 2024, 2025</li>
-                <li>3.82 GPA</li>
+                <li>3.84 GPA</li>
                 <li>True Blue Scholarship Recipient</li>
+                <li>Douglas L. McCrary Endowed Scholarship Recipient</li>
             </ul>
             </div>
         </div>
@@ -31,7 +32,7 @@
 </div>
 
 <style>
-    p, h2 {
+    h2 {
         color : var(--color-e);
         margin-left:20px;
     }

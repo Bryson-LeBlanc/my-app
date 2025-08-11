@@ -80,4 +80,8 @@
     #title-place {
         height: 40px;
     }
+
+    li {
+        padding-bottom: 10px;
+    }
 </style>

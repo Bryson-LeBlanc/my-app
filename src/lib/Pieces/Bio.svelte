@@ -27,12 +27,13 @@
             </p>
             <p>
                 My first experience in industry was with <a href="https://roadsync.com/">RoadSync</a> in Atlanta as a Software Engineering intern, 
-                where I worked mostly with data visualization and system health. I continue part time work here Summer of 2025.
+                where I worked mostly with data visualization and system health. I spent the summer of 2025 with Roadsync as well, where I was focused on 
+                building OAuth 2.0 Oidc authentication for internal company webapps.
             </p>
             <p>
                 Following my sophomore year, I began a Full-Stack web development Co-Op with Auburn University 
                 <a href="https://cws.auburn.edu/cws">Campus Web Solutions</a>,
-                which operates in the Office of Information Technology. Currently in my second semester of the program.
+                which operates in the Office of Information Technology. Currently in my third semester of the program.
             </p>
         </div>
         <div id="me-pic">

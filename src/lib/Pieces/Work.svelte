@@ -6,7 +6,13 @@
             role: "Full-Stack Web Developer",
             date: "May 2024 - August 2024, Jan 2025 - May 2025",
             img: "src/lib/still/cws.jpg",
-            description: ["Working on various web development projects for Auburn University, focusing on enhancing user experience and system functionality."],
+            description: [
+                "Working on various web development projects in the full stack for Auburn University, focusing on enhancing user experience, accessibility, and system functionality.",
+                "Design and build database schemas and queries to support these web applications, ensuring efficient data management and retrieval.",
+                "Collaborate with fellow developers and mentor younger students in the program, fostering a collaborative learning environment.",
+                "Follow Agile workflow to manage project timelines, ensuring timely completion of tasks.",
+                "Write and receive code reviews in the Git flow, maintaining high code quality and standards."
+            ],
             location: "Auburn, AL",
             techs: ["JavaScript", "Jira", "Bootstrap", ".NET", "SQL", "C#", "HTML", "CSS", "GitHub"]
         },
@@ -15,7 +21,11 @@
             role: "Software Engineering Intern",
             date: "May 2023 - Aug 2023, May 2025 - Aug 2025",
             img: "src/lib/still/roadsync.png",
-            description: ["Contributed to data visualization and system health monitoring, improving operational efficiency."],
+            description: [
+                "Contributed to data visualization and system health monitoring with Datadog, improving operational efficiency.",
+                "Wrote python script to automate specific complex SQL queries, enhancing data retrieval processes.",
+                "Developed OAuth 2.0 OIDC authentication for applications, enhancing security and user management."
+            ],
             location: "Atlanta, GA",
             techs: ["Python", "DataDog", "Jira", "GitLab", "Docker"]
         }
