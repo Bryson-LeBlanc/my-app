@@ -157,7 +157,7 @@
                 <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
                         <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
-                        <span class="overlayText" data-index="1">Debug Extension</span>
+                        <span class="overlayText" data-index="1">React Project???</span>
                     </div>
                 </button>
             </li>
