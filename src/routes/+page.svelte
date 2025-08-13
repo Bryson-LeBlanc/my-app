@@ -11,7 +11,7 @@
     }
 </script>
 
-<link rel="stylesheet" href="src/lib/index.css">
+<!-- <link rel="stylesheet" href="src/lib/index.css"> -->
 
 <svelte:head>
     <title>Bryson LeBlanc</title>

@@ -30,9 +30,14 @@
             picLink: "src/lib/still/poke.png"
         },
         dataP: {
-            name: "Data Thing",
-            description: ["A project for data manipulation"],
-            picLink: "src/lib/still/placeholder.png"
+            name: "Auburn Football",
+            description: [
+                "Auburn University Football application (AUFSTC) for student ticketing, worked on during my time with Campus Web Solutions",
+                "Built mass data manipulation functionality for admin ticket appeal decisions",
+                "Redesign admin appeals page frontend with accessibility, responsiveness, and user experience in mind",
+                "All apps designed with mobile device compatibility"
+            ],
+            picLink: "src/lib/still/aufstc.png"
         }
     };
 
@@ -167,8 +172,8 @@
             <li class="projNav square">
                 <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
-                        <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
-                        <span class="overlayText" data-index="3">Data Thing</span>
+                        <img src="src/lib/still/aufstc.png" alt="project" class="projIcon">
+                        <span class="overlayText" data-index="3">Auburn Football</span>
                     </div>
                 </button>
             </li>
@@ -235,10 +240,10 @@
 
     .projIcon {
         display: block;
-        width: 120px;
-        height: 40px;
+        width: 120px; /* Set a fixed width */
+        height: 60px; /* Set a fixed height */
+        object-fit: cover; /* Ensures the image fills the box without distortion */
         opacity: 0.4; /* Adjust opacity as needed */
-        height: auto;
     }
 
     .overlayText {
