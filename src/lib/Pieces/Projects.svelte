@@ -13,12 +13,14 @@
                 "Accessible, responsive, and secure. Built in role based permissions for voters, admins, watchers, and election officials.", 
                 "Developed in the agile workflow with a team of 6 students alongside QA and project management teams.",
             ],
-            picLink: "src/lib/still/voting.png"
+            picLink: "src/lib/still/voting.png",
+            appLink: ""
         },
         debug: {
             name: "Debug Extension",
             description: ["A browser extension for debugging web pages"],
-            picLink: "src/lib/still/placeholder.png"
+            picLink: "src/lib/still/placeholder.png",
+            appLink: ""
         },
         pokemon: {
             name: "Pokémon App",
@@ -28,7 +30,8 @@
                 "Includes 'Who's that Pokémon?' game mode with user-based high scores to test Pokémon knowledge.",
                 "Integrated Firebase for authentication and real-time NoSQL data storage."
             ],
-            picLink: "src/lib/still/poke.png"
+            picLink: "src/lib/still/poke.png",
+            appLink: "https://usepokeapi.onrender.com/"
         },
         dataP: {
             name: "Auburn Football",
@@ -38,7 +41,8 @@
                 "Redesign admin appeals page frontend with accessibility, responsiveness, and user experience in mind",
                 "All apps designed with mobile device compatibility"
             ],
-            picLink: "src/lib/still/aufstc.png"
+            picLink: "src/lib/still/aufstc.png",
+            appLink: ""
         }
     };
 

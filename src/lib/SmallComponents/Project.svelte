@@ -6,7 +6,18 @@
  
 
 <div class="project-details flex">
-    <h2>{details.name}</h2>
+    <div class="project-header">
+        <h2>{details.name}</h2>
+        {#if details.appLink != ""}
+            <a href={details.appLink} class="app-link" target="_blank" rel="noopener noreferrer">
+            <button class="nice-btn">
+                🚀 View App
+            </button>
+            </a>
+        <!-- {:else}
+            <span class="no-link">No App Link Available</span> -->
+        {/if}
+    </div>
     <div class="desc-pic">
         <div class="desc">
             <ul>
@@ -67,6 +78,34 @@
         width: 500px;
         height: 250px;
         object-fit: cover;
+    }
+
+    .project-header {
+        display: flex;
+        align-items: center; /* Vertically center items */
+        justify-content: center; /* Center the title by default */
+        width: 100%;
+        position: relative; /* Allows positioning of the app link */
+    }
+
+    .app-link {
+        position: absolute;
+        right: 0; /* Aligns the app link to the right */
+    }
+
+    .nice-btn {
+        background-color: var(--color-b);
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-right: 50px;
+    }
+
+    .nice-btn:hover {
+        background-color: var(--color-d);
     }
 
     @media (max-width: 865px) {
