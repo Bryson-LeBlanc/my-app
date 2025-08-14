@@ -23,9 +23,10 @@
         pokemon: {
             name: "Pokémon App",
             description: [
-                "Personal project in python to practice API usage and edge case handling.",
+                "Personal project to practice API usage, edge case handling, authentication, and cloud-hosted NoSQL DBaaS.",
                 "Uses the PokéAPI to fetch Pokémon data and display it in a user-friendly interface.",
-                "Includes 'Who's that Pokémon?' game mode to test knowledge of Pokémon names and types."
+                "Includes 'Who's that Pokémon?' game mode with user-based high scores to test Pokémon knowledge.",
+                "Integrated Firebase for authentication and real-time NoSQL data storage."
             ],
             picLink: "src/lib/still/poke.png"
         },
