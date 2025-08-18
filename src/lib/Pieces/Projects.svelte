@@ -16,12 +16,12 @@
             picLink: "src/lib/still/voting.png",
             appLink: ""
         },
-        debug: {
-            name: "Debug Extension",
-            description: ["A browser extension for debugging web pages"],
-            picLink: "src/lib/still/placeholder.png",
-            appLink: ""
-        },
+        // debug: {
+        //     name: "Debug Extension",
+        //     description: ["A browser extension for debugging web pages"],
+        //     picLink: "src/lib/still/placeholder.png",
+        //     appLink: ""
+        // },
         pokemon: {
             name: "Pokémon App",
             description: [
@@ -158,14 +158,14 @@
                     </div>
                 </button>
             </li>
-            <li class="projNav square">
+            <!-- <li class="projNav square">
                 <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
                         <img src="src/lib/still/placeholder.png" alt="project" class="projIcon">
                         <span class="overlayText" data-index="1">React Project???</span>
                     </div>
                 </button>
-            </li>
+            </li> -->
             <li class="projNav square">
                 <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
@@ -191,9 +191,9 @@
     <div class="is-selected yes" data-index="0">
         <Project details={projects.voting}/>
     </div>
-    <div class="is-selected no" data-index="1">
+    <!-- <div class="is-selected no" data-index="1">
         <Project details={projects.debug}/>
-    </div>
+    </div> -->
     <div class="is-selected no" data-index="2">
         <Project details={projects.pokemon}/>
     </div>
