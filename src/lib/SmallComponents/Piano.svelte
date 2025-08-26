@@ -63,7 +63,7 @@
                 map = note + octave;
             }
             try {
-                const url = new URL("../assets/" + map + ".mp3", import.meta.url).href;
+                const url = new URL("/assets/" + map + ".mp3", import.meta.url).href;
                 const audio = new Audio(url);
                 await audio.play();
             } catch (error) {

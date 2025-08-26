@@ -8,13 +8,13 @@
         <h2>About Me</h2>
         <div class="info flex">
             <a href="https://github.com/Bryson-LeBlanc" class="nav" aria-label="github">
-                <img class="icon" src="src\lib\still\gitICON.png" alt="git">
+                <img class="icon" src="/still/gitICON.png" alt="git">
             </a>
             <a href="https://www.linkedin.com/in/b-w-l/" class="nav" aria-label="linkedin">
-                <img class="icon" src="src\lib\still\inICON.png" alt="in">
+                <img class="icon" src="/still/inICON.png" alt="in">
             </a>
-            <a href="src/lib/still/bwlRES.pdf" id="resume" class="nav flex" aria-label="resume">
-                <img class="icon" src="src\lib\still\resume.jpg" alt="pdf">
+            <a href="/still/bwlRES.pdf" id="resume" class="nav flex" aria-label="resume">
+                <img class="icon" src="/still/resume.jpg" alt="pdf">
                 <strong>Resume</strong>
             </a>
         </div>
@@ -37,7 +37,7 @@
             </p>
         </div>
         <div id="me-pic">
-            <img id="look" src="src\lib\still\abtme.jpg" alt="pic of me">
+            <img id="look" src="/still/abtme.jpg" alt="pic of me">
         </div>
         
     </div>

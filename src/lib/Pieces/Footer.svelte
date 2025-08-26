@@ -8,14 +8,14 @@
         <h2>Contact Me!</h2>
         <div class="contacts flex">
             <a href="mailto:brysonleblanc2004@gmail.com" class="icons" aria-label="github">
-                <img class="icon" src="src\lib\still\mail.png" alt="git">
+                <img class="icon" src="/still/mail.png" alt="git">
             </a>
             <a href="https://www.linkedin.com/in/b-w-l/" class="icons" aria-label="linkedin">
-                <img class="icon ln" src="src\lib\still\inICON.png" alt="in">
+                <img class="icon ln" src="/still/inICON.png" alt="in">
             </a>
         </div>
         <a href="https://github.com/Bryson-LeBlanc/my-app" class="nav flex source" aria-label="github">
-            <img class="icon src" src="src\lib\still\gitICON.png" alt="git">
+            <img class="icon src" src="/still/gitICON.png" alt="git">
             Source Code
         </a>
     </div>

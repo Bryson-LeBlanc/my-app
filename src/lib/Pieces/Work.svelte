@@ -5,7 +5,7 @@
             title: "Auburn University Campus Web Solutions",
             role: "Full-Stack Web Developer",
             date: "May 2024 - August 2024, Jan 2025 - May 2025",
-            img: "src/lib/still/cws.jpg",
+            img: "/still/cws.jpg",
             description: [
                 "Working on various web development projects in the full stack for Auburn University, focusing on enhancing user experience, accessibility, and system functionality.",
                 "Design and build database schemas and queries to support these web applications, ensuring efficient data management and retrieval.",
@@ -20,7 +20,7 @@
             title: "RoadSync",
             role: "Software Engineering Intern",
             date: "May 2023 - Aug 2023, May 2025 - Aug 2025",
-            img: "src/lib/still/roadsync.png",
+            img: "/still/roadsync.png",
             description: [
                 "Contributed to data visualization and system health monitoring with Datadog, improving operational efficiency.",
                 "Wrote python script to automate specific complex SQL queries, enhancing data retrieval processes.",

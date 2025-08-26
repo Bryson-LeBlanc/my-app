@@ -13,7 +13,7 @@
                 "Accessible, responsive, and secure. Built in role based permissions for voters, admins, watchers, and election officials.", 
                 "Developed in the agile workflow with a team of 6 students alongside QA and project management teams.",
             ],
-            picLink: "src/lib/still/voting.png",
+            picLink: "/still/voting.png",
             appLink: ""
         },
         // debug: {
@@ -30,7 +30,7 @@
                 "Includes 'Who's that Pokémon?' game mode with user-based high scores to test Pokémon knowledge.",
                 "Integrated Firebase for authentication and real-time NoSQL data storage."
             ],
-            picLink: "src/lib/still/poke.png",
+            picLink: "/still/poke.png",
             appLink: "https://usepokeapi.onrender.com/"
         },
         dataP: {
@@ -41,7 +41,7 @@
                 "Built mass data manipulation functionality for admin ticket appeal decisions",
                 "Redesign admin appeals page frontend with accessibility, responsiveness, and user experience in mind"
             ],
-            picLink: "src/lib/still/aufstc.png",
+            picLink: "/still/aufstc.png",
             appLink: ""
         }
     };
@@ -153,7 +153,7 @@
             <li class="projNav square">
                 <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
-                        <img src="src/lib/still/voting.png" alt="project" class="projIcon">
+                        <img src="/still/voting.png" alt="project" class="projIcon">
                         <span class="overlayText selected" data-index="0">Voting</span>
                     </div>
                 </button>
@@ -169,7 +169,7 @@
             <li class="projNav square">
                 <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
-                        <img src="src/lib/still/poke.png" alt="project" class="projIcon">
+                        <img src="/still/poke.png" alt="project" class="projIcon">
                         <span class="overlayText" data-index="2">Pokémon App</span>
                     </div>
                 </button>
@@ -177,7 +177,7 @@
             <li class="projNav square">
                 <button class="projNavButton box" aria-label="project">
                     <div class="imgTextContainer">
-                        <img src="src/lib/still/aufstc.png" alt="project" class="projIcon">
+                        <img src="/still/aufstc.png" alt="project" class="projIcon">
                         <span class="overlayText" data-index="3">Auburn Football</span>
                     </div>
                 </button>

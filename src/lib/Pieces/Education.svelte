@@ -8,7 +8,7 @@
             <h2>Education</h2>
             <div class="content">
             <div class="flexLine">
-                <img src="src/lib/still/auburn.png" alt="school" class="school-icon">
+                <img src="/still/auburn.png" alt="school" class="school-icon">
                 <div class="school">
                 <h4>Auburn University</h4>
                 <h5>BSE - Software Engineering</h5>

@@ -58,7 +58,7 @@ export async function keyDownNote(event: KeyboardEvent): Promise<void> {
       }
     }
 
-    const url = new URL("../assets/" + note + ".mp3", import.meta.url).href;
+    const url = new URL("/assets/" + note + ".mp3", import.meta.url).href;
     const audio = new Audio(url);
     await audio.play();
 }
