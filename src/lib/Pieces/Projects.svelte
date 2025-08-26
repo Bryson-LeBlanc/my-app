@@ -37,9 +37,9 @@
             name: "Auburn Football",
             description: [
                 "Auburn University Football application (AUFSTC) for student ticketing, worked on during my time with Campus Web Solutions",
+                "Responded to deadlock errors during a high traffic ticketing event, rewrote logic to improve performance from >2min to <2seconds",
                 "Built mass data manipulation functionality for admin ticket appeal decisions",
-                "Redesign admin appeals page frontend with accessibility, responsiveness, and user experience in mind",
-                "All apps designed with mobile device compatibility"
+                "Redesign admin appeals page frontend with accessibility, responsiveness, and user experience in mind"
             ],
             picLink: "src/lib/still/aufstc.png",
             appLink: ""
