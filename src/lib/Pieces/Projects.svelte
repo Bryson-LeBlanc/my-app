@@ -31,7 +31,7 @@
                 "Integrated Firebase for authentication and real-time NoSQL data storage."
             ],
             picLink: "/still/poke.png",
-            appLink: "https://usepokeapi.onrender.com/"
+            appLink: "https://mypokemonapp-xpyl.onrender.com"
         },
         dataP: {
             name: "Auburn Football",
