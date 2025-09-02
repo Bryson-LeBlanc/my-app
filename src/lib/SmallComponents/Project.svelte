@@ -8,15 +8,17 @@
 <div class="project-details flex">
     <div class="project-header">
         <h2>{details.name}</h2>
-        {#if details.appLink != ""}
-            <a href={details.appLink} class="app-link" target="_blank" rel="noopener noreferrer">
-            <button class="nice-btn">
-                🚀 View App
-            </button>
-            </a>
-        <!-- {:else}
-            <span class="no-link">No App Link Available</span> -->
-        {/if}
+        <div class="app-link-container">
+            {#if details.appLink != ""}
+                <a href={details.appLink} class="app-link" target="_blank" rel="noopener noreferrer">
+                    <button class="nice-btn">
+                        🚀 View App
+                    </button>
+                </a>
+            <!-- {:else}
+                <span class="no-link">No App Link Available</span> -->
+            {/if}
+        </div>
     </div>
     <div class="desc-pic">
         <div class="desc">
@@ -118,6 +120,12 @@
     @media (max-width: 650px) {
         .project-img {
             display:none;
+        }
+        .app-link-container {
+            margin-bottom: 25px;
+        }
+        .project-header {
+            flex-direction: column;
         }
     }
 </style>

@@ -113,4 +113,10 @@
         border-radius: 2px;
         margin: 0px 5px 0px 5px;
     }
+
+    @media (max-width: 400px) {
+        .nav {
+            border: 1px solid black;
+        }
+	}
 </style>

@@ -18,8 +18,10 @@
             <h3 class="role">{details.role}</h3>
             <div id="title-place" class="flex">
                 <h3>{details.title}</h3>
-                <p class="hyphen">-</p> 
-                <h4>{details.location}</h4>
+                <div class="h-place">
+                    <p class="hyphen">-</p> 
+                    <h4>{details.location}</h4>
+                </div>
             </div>
             <div id="dates">
                 <p class="dateTime">{details.date}</p>
@@ -83,5 +85,22 @@
 
     li {
         padding-bottom: 10px;
+    }
+
+    .h-place {
+        display:flex;
+        align-items: center;
+    }
+
+    @media (max-width:750px) {
+        #title-place {
+            margin-top : 20px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        #dates, .h-place{
+            display: none;
+        }
     }
 </style>

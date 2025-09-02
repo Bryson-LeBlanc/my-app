@@ -314,11 +314,11 @@
             margin-right: 25%;
         }
         .left {
-            margin-right: 10px;
+            margin-right: 50px;
             width: 10px;
         }
         .right {
-            margin-left: 10px;
+            margin-left: 50px;
         }
 	}
 </style>

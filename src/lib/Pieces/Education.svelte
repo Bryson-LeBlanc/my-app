@@ -34,12 +34,8 @@
 <style>
     h2 {
         color : var(--color-e);
-        margin-left:20px;
     }
 
-    h2 {
-        margin-left:30%;
-    }
     h4 {
         margin-top:30px;
         margin-bottom: 0px !important;
@@ -75,6 +71,9 @@
 
     .section {
         width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
     }
     #head {
         display: flex;
@@ -98,7 +97,6 @@
 
     @media (max-width: 800px) {
                 .section {
-                    display: block;
                     margin-bottom: 20px;
                 }
 
