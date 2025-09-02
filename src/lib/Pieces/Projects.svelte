@@ -115,13 +115,13 @@
                     } else {
                         projDivs[selectedIndex].classList.add('no');
                         projDivs[selectedIndex].classList.remove('yes');
-                        projDivs[3].classList.add('yes');
-                        projDivs[3].classList.remove('no');
+                        projDivs[2].classList.add('yes');
+                        projDivs[2].classList.remove('no');
                     }
                 } else { // right nav
                     let projDivs = document.querySelectorAll('.is-selected');
                     let selectedIndex = Array.from(projDivs).findIndex(div => div.classList.contains('yes'));
-                    if (selectedIndex < 3) {
+                    if (selectedIndex < 2) {
                         projDivs[selectedIndex].classList.add('no');
                         projDivs[selectedIndex].classList.remove('yes');
                         projDivs[selectedIndex + 1].classList.add('yes');
