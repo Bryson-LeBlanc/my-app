@@ -18,7 +18,7 @@
         },
         roadsync: {
             title: "RoadSync",
-            role: "Software Engineering Intern",
+            role: "Software Engineer",
             date: "May 2023 - Aug 2023, May 2025 - Aug 2025",
             img: "/still/roadsync.png",
             description: [

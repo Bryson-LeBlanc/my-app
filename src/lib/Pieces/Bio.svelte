@@ -27,8 +27,8 @@
             </p>
             <p>
                 My first experience in industry was with <a href="https://roadsync.com/">RoadSync</a> in Atlanta as a Software Engineering intern, 
-                where I worked mostly with data visualization and system health. I spent the summer of 2025 with Roadsync as well, where I was focused on 
-                building OAuth 2.0 Oidc authentication for internal company webapps.
+                where I worked mostly with data visualization and system health. RoadSync brought me back on in the summer of 2025, where I was tasked with 
+                building out internal company webapps authentication to use an in-house service with OAuth 2.0 OIDC.
             </p>
             <p>
                 Following my sophomore year, I began a Full-Stack web development Co-Op with Auburn University 

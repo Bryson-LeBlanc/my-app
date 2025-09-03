@@ -23,11 +23,11 @@
             </ul>
             </div>
         </div>
-        <div class="certifications section">
+        <!-- <div class="certifications section">
             <h2>Certifications</h2>
             <div class="content">
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 
@@ -85,7 +85,7 @@
         position: relative;
     }
 
-    .education::after {
+    /* .education::after {
         content: '';
         position: absolute;
         right: 0;
@@ -93,7 +93,7 @@
         bottom: 5%;
         width: 2px;
         background-color: white;
-    }
+    } */
 
     @media (max-width: 800px) {
                 .section {
