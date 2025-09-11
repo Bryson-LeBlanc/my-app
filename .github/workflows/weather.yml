@@ -30,7 +30,7 @@ jobs:
 
           echo "Today's weather: rain chance=$RAIN, temp=$TEMP°C, humidity=$HUM"
 
-          echo "{ \"temp\": \"$TEMP\", \"humidity\": \"$HUM\", \"rain\": \"$RAIN\" }" > weather.json
+          echo "{ \"temp\": \"$TEMP\", \"humidity\": \"$HUM\", \"rain\": \"$RAIN\" }" > static/weather.json
           
       - name: Commit and push changes
         run: |

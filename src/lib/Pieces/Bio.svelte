@@ -1,5 +1,30 @@
 <script lang='ts'>
+    import { onMount } from 'svelte';
 
+    let weatherData: { temperature: number; chanceOfRain: number; humidity: number } | null = null;
+
+    // Function to convert Celsius to Fahrenheit
+    function celsiusToFahrenheit(celsius: number): number {
+        return (celsius * 9) / 5 + 32;
+    }
+
+    // Fetch weather data on component mount
+    onMount(async () => {
+        try {
+            const response = await fetch('/weather.json');
+            if (!response.ok) {
+                throw new Error('Failed to fetch weather data');
+            }
+            const data = await response.json();
+            weatherData = {
+                temperature: celsiusToFahrenheit(data.temperature),
+                chanceOfRain: data.chanceOfRain,
+                humidity: data.humidity
+            };
+        } catch (error) {
+            console.error('Error fetching weather data:', error);
+        }
+    });
 </script>
 
 
@@ -40,6 +65,12 @@
             <img id="look" src="/still/abtme.jpg" alt="pic of me">
         </div>
         
+    </div>
+    <div id="mini_project" class="flex">
+        <h3>Today's Weather in Auburn</h3>
+        <h4>Temperature: {weatherData?.temperature}°F</h4>
+        <h4>Chance of Rain: {weatherData?.chanceOfRain}%</h4>
+        <h4>Humidity: {weatherData?.humidity}%</h4>
     </div>
 </div>
 
