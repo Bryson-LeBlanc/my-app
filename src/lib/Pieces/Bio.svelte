@@ -1,30 +1,23 @@
 <script lang='ts'>
     import { onMount } from 'svelte';
+    import weather from "../../weather.json";
 
-    let weatherData: { temperature: number; chanceOfRain: number; humidity: number } | null = null;
+    let weatherData: { temperature: string; chanceOfRain: string; humidity: string } | null = null;
 
     // Function to convert Celsius to Fahrenheit
-    function celsiusToFahrenheit(celsius: number): number {
-        return (celsius * 9) / 5 + 32;
+    function celsiusToFahrenheit(celsius: string): number {
+        return (parseFloat(celsius) * 9) / 5 + 32;
     }
 
     // Fetch weather data on component mount
     onMount(async () => {
-        try {
-            const response = await fetch('src/weather.json');
-            if (!response.ok) {
-                throw new Error('Failed to fetch weather data');
-            }
-            const data = await response.json();
-            weatherData = {
-                temperature: celsiusToFahrenheit(data.temp),
-                chanceOfRain: data.rain,
-                humidity: data.humidity
-            };
-            const temp = celsiusToFahrenheit(data.temperature);
-        } catch (error) {
-            console.error('Error fetching weather data:', error);
-        }
+
+        weatherData = {
+            temperature: celsiusToFahrenheit(weather.temp).toString(),
+            chanceOfRain: weather.rain.toString(),
+            humidity: weather.humidity.toString()
+        };
+
     });
 </script>
 
