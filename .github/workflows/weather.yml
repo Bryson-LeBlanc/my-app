@@ -22,7 +22,7 @@ jobs:
           LAT="32.6"
           LON="-85.5"
 
-          RESPONSE=$(curl -s "https://api.open-meteo.com/v1/forecast?latitude=$LAT&longitude=$LON&current_weather=true")
+          RESPONSE=$(curl -s "https://api.open-meteo.com/v1/forecast?latitude=$LAT&longitude=$LON&current_weather=true&hourly=relative_humidity_2m,precipitation_probability")
 
           TEMP=$(echo $RESPONSE | jq -r '.current_weather.temperature')
           HUM=$(echo $RESPONSE | jq -r '.hourly.relative_humidity_2m[0]')
