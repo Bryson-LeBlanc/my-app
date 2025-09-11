@@ -61,11 +61,16 @@
         
     </div>
     <div id="mini_project" class="flex">
-        <h3>Today's Weather in Auburn</h3>
-        <h4>Temperature: {weatherData?.temperature}°F</h4>
-        <h4>Chance of Rain: {weatherData?.chanceOfRain}%</h4>
-        <h4>Humidity: {weatherData?.humidity}%</h4>
+        <h3>Today's Weather in Auburn, AL</h3>
+        <div id="weatherData">
+            <h4 id="temp" class="weather">{weatherData?.temperature}°F</h4>
+            <div class="otherWeather">
+                <h4 class="weather">Chance of Rain: {weatherData?.chanceOfRain}%</h4>
+                <h4 class="weather">Humidity: {weatherData?.humidity}%</h4>
+            </div>
+        </div>
     </div>
+    <p class="actions">**Automated daily weather updates using Github Actions**</p>
 </div>
 
 <style>
@@ -77,6 +82,22 @@
         color : var(--color-d);
     }
 
+    #temp {
+        font-size: xx-large;
+    }
+
+    .actions {
+        margin-left:  15px;
+        margin-top: 0px;
+        margin-bottom: 2px;
+        font-size: small;
+    }
+
+    #weatherData {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     a {
         color: var(--color-a);
         font-weight: bold;
@@ -86,16 +107,40 @@
             border: 3px solid #d7c6ff;
         }
 
+    @media (max-width : 1050px) {
+        .otherWeather {
+            display: none;
+        }
+    }
+
     @media (max-width: 800px) {
         #me-pic {
             display:none;
         }
 	}
+    
 
     .icon {
         height: 30px;
         width: 30px;
         margin-top: 2px;
+    }
+
+    .weather {
+        margin: 0px;
+        color: white;
+    }
+
+    #mini_project {
+        margin:15px;
+        margin-bottom : 2px;
+        flex-direction: column;
+        border-radius: 5px;
+        color: white;
+        border: black 2px solid;
+        padding: 10px 10px 10px 10px;
+        background-color: #2463a7;
+        width: 35%;
     }
 
     .flex {
@@ -139,9 +184,20 @@
         margin: 0px 5px 0px 5px;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 530px) {
         .nav {
             border: 1px solid black;
+        }
+
+        #mini_project {
+        margin:15px;
+        flex-direction: column;
+        border-radius: 5px;
+        color: white;
+        border: black 2px solid;
+        padding: 10px 10px 10px 10px;
+        background-color: #2463a7;
+        width: 75%;
         }
 	}
 </style>
