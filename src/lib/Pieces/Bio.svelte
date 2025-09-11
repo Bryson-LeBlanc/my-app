@@ -11,16 +11,17 @@
     // Fetch weather data on component mount
     onMount(async () => {
         try {
-            const response = await fetch('/weather.json');
+            const response = await fetch('src/weather.json');
             if (!response.ok) {
                 throw new Error('Failed to fetch weather data');
             }
             const data = await response.json();
             weatherData = {
-                temperature: celsiusToFahrenheit(data.temperature),
-                chanceOfRain: data.chanceOfRain,
+                temperature: celsiusToFahrenheit(data.temp),
+                chanceOfRain: data.rain,
                 humidity: data.humidity
             };
+            const temp = celsiusToFahrenheit(data.temperature);
         } catch (error) {
             console.error('Error fetching weather data:', error);
         }
