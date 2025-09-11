@@ -1,0 +1,32 @@
+name: Update Daily Weather
+
+on:
+  schedule:
+    - cron: "0 12 * * *" # runs daily at 12:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update-weather:
+    name: update weather from this day
+    runs-on: ubuntu-latest
+    steps:
+      - name: update weather from this day
+        uses: actions/checkout@v3
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Fetch weather (Open-Meteo, no API key needed)
+        run: |
+          # coords
+          LAT="32.6"
+          LON="-85.5"
+
+          RESPONSE=$(curl -s "https://api.open-meteo.com/v1/forecast?latitude=$LAT&longitude=$LON&current_weather=true")
+
+          SUMMARY=$(echo $RESPONSE | jq -r '.current_weather.weathercode')
+          TEMP=$(echo $RESPONSE | jq -r '.current_weather.temperature')
+
+          echo "Today's weather: code=$SUMMARY, temp=$TEMP°C"
+
+          echo "{ \"summary\": \"$SUMMARY\", \"temp\": \"$TEMP\" }" > weather.json
