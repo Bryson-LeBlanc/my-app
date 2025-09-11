@@ -25,12 +25,12 @@ jobs:
           RESPONSE=$(curl -s "https://api.open-meteo.com/v1/forecast?latitude=$LAT&longitude=$LON&current_weather=true")
 
           TEMP=$(echo $RESPONSE | jq -r '.current_weather.temperature')
-          HUM=$(echo $RESPONSE | jq -r '.current_weather.relative_humidity')
-          RAIN=$(echo $RESPONSE | jq -r '.current_weather.precipitation_probability')
+          HUM=$(echo $RESPONSE | jq -r '.hourly.relative_humidity_2m[0]')
+          RAIN=$(echo $RESPONSE | jq -r '.hourly.precipitation_probability[0]')
 
-          echo "Today's weather: code=$SUMMARY, temp=$TEMP°C"
+          echo "Today's weather: rain chance=$RAIN, temp=$TEMP°C, humidity=$HUM"
 
-          echo "{ \"temp\": \"$TEMP\", \"humidity\": \"$HUM\", \"rain\": \"$RAIN\",  }" > weather.json
+          echo "{ \"temp\": \"$TEMP\", \"humidity\": \"$HUM\", \"rain\": \"$RAIN\" }" > weather.json
           
       - name: Commit and push changes
         run: |
