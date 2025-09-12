@@ -2,7 +2,7 @@ name: Update Daily Weather
 
 on:
   schedule:
-    - cron: "0 12 * * *" # runs daily at 12:00 UTC
+    - cron: "0 17 * * *" # runs daily at 12:00 UTC
   workflow_dispatch:
 
 jobs:
