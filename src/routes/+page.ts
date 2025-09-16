@@ -7,7 +7,6 @@ export const load: Load = async ({ fetch }) => {
 	try {
 		const response = await fetch(`/api/projects`);
 		const projects = (await response.json()) as ProjType[];
-		console.log(projects);
 		return {
 			projects
 		};

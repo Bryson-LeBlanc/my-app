@@ -6,7 +6,7 @@
 
     // Function to convert Celsius to Fahrenheit
     function celsiusToFahrenheit(celsius: string): number {
-        return (parseFloat(celsius) * 9) / 5 + 32;
+        return Math.round((parseFloat(celsius) * 9) / 5 + 32);
     }
 
     // Fetch weather data on component mount
