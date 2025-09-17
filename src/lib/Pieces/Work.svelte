@@ -4,7 +4,7 @@
         cws: {
             title: "Auburn University Campus Web Solutions",
             role: "Full-Stack Web Developer",
-            date: "May 2024 - August 2024, Jan 2025 - May 2025",
+            date: "May 2024 - August 2024, Jan 2025 - May 2025 (Co-op)",
             img: "/still/cws.jpg",
             description: [
                 "Working on various web development projects in the full stack for Auburn University, focusing on enhancing user experience, accessibility, and system functionality.",
@@ -19,7 +19,7 @@
         roadsync: {
             title: "RoadSync",
             role: "Software Engineer",
-            date: "May 2023 - Aug 2023, May 2025 - Aug 2025",
+            date: "May 2023 - Aug 2023, May 2025 - Aug 2025 (Internship)",
             img: "/still/roadsync.png",
             description: [
                 "Contributed to data visualization and system health monitoring with Datadog, improving operational efficiency.",
