@@ -23,11 +23,18 @@
             </ul>
             </div>
         </div>
-        <!-- <div class="certifications section">
+        <div class="certifications section">
             <h2>Certifications</h2>
             <div class="content">
+                <div class="flexLine">
+                    <img src="/still/aws.png" alt="aws" class="school-icon">
+                    <div class="school">
+                        <h4>AWS Certified Cloud Practitioner</h4>
+                        <h5>Issued: Sep 17, 2025</h5>
+                    </div>
+                </div>
             </div>
-        </div> -->
+        </div>
     </div>
 </div>
 
@@ -73,10 +80,12 @@
         width:100%;
         display:flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        margin-bottom: 10px;
     }
     #head {
         display: flex;
+        flex-direction: column;
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -115,7 +124,6 @@
                 }
                 .flexStack {
                     flex-direction: column;
-                    align-items: center;
                 }
             }
 </style>
