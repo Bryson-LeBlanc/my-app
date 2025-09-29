@@ -25,8 +25,8 @@
         pokemon: {
             name: "Pokémon App",
             description: [
-                "Personal project to practice API usage, edge case handling, authentication, and cloud-hosted NoSQL DBaaS.",
-                "Uses the PokéAPI to fetch Pokémon data and display it in a user-friendly interface.",
+                "Personal project to practice automation, automated testing, API usage, edge case handling, authentication, and cloud-hosted NoSQL DBaaS.",
+                "Write automated regression and integration tests with Github Actions to ensure app functionality with each new deployment.",
                 "Includes 'Who's that Pokémon?' game mode with user-based high scores to test Pokémon knowledge.",
                 "Integrated Firebase for authentication and real-time NoSQL data storage."
             ],
