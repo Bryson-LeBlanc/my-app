@@ -15,7 +15,7 @@
           </div>
         </div>
         <ul>
-          <li>Dean's list - 2023, 2024, 2025</li>
+          <li>Dean's list - 2023, 2024, 2025, 2026</li>
           <li>3.85 GPA</li>
           <li>True Blue Scholarship Recipient</li>
           <li>Douglas L. McCrary Endowed Scholarship Recipient</li>

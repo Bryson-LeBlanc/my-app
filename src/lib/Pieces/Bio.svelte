@@ -41,8 +41,7 @@
     <div id="bio" class="flex">
         <div id="para">
             <p>
-                Current senior studying Software Engineering at Auburn University, graduating in Spring 2026. Moved from Kennesaw,
-                 Georgia in 2022 to begin studying.
+                Auburn University Software Engineering graduate from Kennesaw, GA. Currently Huntsville, AL based with Radiance Technologies as a Software Engineer.
             </p>
             <p>
                 My first experience in industry was with <a href="https://roadsync.com/">RoadSync</a> in Atlanta as a Software Engineering intern, 
@@ -52,7 +51,7 @@
             <p>
                 Following my sophomore year, I began a Full-Stack web development Co-Op with Auburn University 
                 <a href="https://cws.auburn.edu/cws">Campus Web Solutions</a>,
-                which operates in the Office of Information Technology. Currently in my third semester of the program.
+                which operates in the Office of Information Technology. Completed 4 rotations, 3 full-time and 1 part-time.
             </p>
         </div>
         <div id="me-pic">

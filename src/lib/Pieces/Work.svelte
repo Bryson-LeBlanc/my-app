@@ -1,10 +1,23 @@
 <script lang="ts">
   import Job from "$lib/SmallComponents/Job.svelte";
   let data = {
+    radiance: {
+      title: "Radiance Technologies",
+      role: "Software Engineer",
+      date: "May 2026 - Present",
+      img: "/still/radiance.jpg",
+      description: [
+        "Project owner of Django-based DB-driven python app.",
+        "Frontend and Backend Development, automation and testing responsbilities.",
+        "Maintain VMs and update Databases.",
+        "Data visualization."
+      ],
+      location: "Huntsville, AL",
+    },
     cws: {
       title: "Auburn University Campus Web Solutions",
       role: "Full-Stack Software Engineer",
-      date: "May 2024 - Present (Co-op)",
+      date: "May 2024 - May 2026 (Co-op)",
       img: "/still/cws.jpg",
       description: [
         "Working on various web development projects in the full stack for Auburn University, focusing on enhancing user experience, accessibility, and system functionality.",
@@ -46,6 +59,7 @@
   <div id="head">
     <h2>Experience</h2>
   </div>
+  <Job details={data.radiance} />
   <Job details={data.cws} />
   <Job details={data.roadsync} />
 </div>
